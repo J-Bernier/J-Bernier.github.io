@@ -3,6 +3,6 @@ email: jeremy.bernier@hotmail.fr
 description: Jérémy BERNIER port-folio
 baseurl: ""
 url: "https://j-bernier.github.io"
-dev_url: "http://localhost:4000"
+urldev: "http://localhost:4000"
 twitter_username: mjeremn1
 github_username: j-bernier
