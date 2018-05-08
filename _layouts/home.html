@@ -1,5 +1,17 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html lang="fr">
+    
+    {% include head.html %}
 
-    {{ content }}
+    <body>
+        {% include header.html %}
+        
+        {% include nav.html %}
 
-{% include footer.html %}
+        {{ content }}
+
+        {% include footer.html %}
+
+    </body>
+
+</html>
