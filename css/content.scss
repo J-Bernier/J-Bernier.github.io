@@ -1,0 +1,90 @@
+---
+# Front matter to ensuire Jekyll properly reads the file
+---
+
+
+body{
+    //background-image: url("../background_index_tmp.jpg");
+    //background-repeat: no-repeat;
+    //background-attachment: scroll;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.navbar{
+    padding-bottom:50px;
+}
+
+.no-l-padding{
+    padding-left:0;
+}
+
+.about-container{
+
+    border: 1px lightgray solid;
+    border-bottom:none;
+    background-color:white;
+    padding:40px;
+
+
+    .photo-container{
+
+        .my-photo{
+            width:100%;
+            background-color:lightgray;
+        }
+    }
+
+    h3,h4{
+        margin:0;
+    }
+
+    h4{
+        font-size:20px;
+    }
+
+    hr{
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        border-color:lightgray;
+    }
+
+    p{
+    }
+
+    .label{
+        text-transform: uppercase;
+        font-size:12px;
+        font-weight: bold;
+        color:#555555;
+    }
+
+    .value{
+        font-size:15px;
+        font-weight:normal;
+        color:darkgray;
+    }
+
+}
+
+.social-media{
+    background-color:#ef4747;
+    color:white;
+    border: 1px lightgray solid;
+    border-top:none;
+    padding:20px;
+
+    .social-icon{
+        width:32px;
+        margin-left:20px;
+        margin-right:20px;
+
+        &:hover{
+            opacity:0.8;
+        }
+    }
+}
