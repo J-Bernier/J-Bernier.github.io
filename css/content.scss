@@ -2,6 +2,7 @@
 # Front matter to ensuire Jekyll properly reads the file
 ---
 
+$primary-red: #ef4747;
 
 body{
     background-image: url("../img/background_index_tmp_2.jpg");
@@ -15,7 +16,7 @@ body{
 }
 
 .navbar{
-    margin-bottom:100px;
+    margin-bottom:15px;
 
     .navbar-nav{
 
@@ -24,14 +25,23 @@ body{
             font-weight:300;
 
             &.active .nav-link{
-                border-bottom: 3px #ef4747 solid;
+                border-bottom: 3px $primary-red solid;
                 padding-bottom:3px;
             }
         }
     }
 }
 
-.about-container{
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px darkgray;
+}
+
+.about-me{
 
     border: 1px lightgray solid;
     border-bottom:none;
@@ -55,25 +65,21 @@ body{
         font-size:20px;
     }
 
-    hr{
-        display: block;
-        margin-top: 0.5em;
-        margin-bottom: 1.5em;
-        margin-left: auto;
-        margin-right: auto;
-        border-style: inset;
-        border-width: 1px;
-        border-color:lightgray;
-    }
-
     p{
     }
 
-    .label{
+    .info-label{
         text-transform: uppercase;
         font-size:12px;
         font-weight: bold;
         color:#555555;
+    }
+
+    .label-working{
+        color:white;
+        background-color:#d9534f;
+        border-radius:5px;
+        padding:4px;
     }
 
     .value{
@@ -82,10 +88,20 @@ body{
         color:darkgray;
     }
 
+    .description-container{
+        hr{
+            margin-top: 1.5em;
+        }
+
+        h3{
+            margin-bottom:0.5em;
+        }
+    }
+
 }
 
 .social-media{
-    background-color:#ef4747;
+    background-color:$primary-red;
     color:white;
     border: 1px lightgray solid;
     border-top:none;
