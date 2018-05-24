@@ -5,3 +5,7 @@ twitter_username: TheMJ_1
 facebook_username: Mjerem
 github_username: j-bernier
 instagram_username: Mjeremn1
+
+collections:
+  jobs:
+    output: true

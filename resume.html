@@ -8,29 +8,37 @@ id: resume
     <div class="row justify-content-center">
         <div class="col-sm-12 col-md-10 col-xs-12 resume">
 
-            <div class="label-warning">This page is still in construction !</div>
-
             <!-- Education -->
             <h3 class="mb-3">Education</h3>
             <hr>
             
             <div class="row justify-content-between no-gutters pl-2 mb-3">
-                <div class="col-lg-6 col-xs-12 no-l-padding">
-                        <p class="resume-name">Preparation of a Master’s Degree in Engineering in Computer Science</p>
+                <div class="col-lg-6 col-xs-12">
+                        <p class="resume-title">Preparation of a Master’s Degree in Engineering in Computer Science</p>
                 </div>
                 <div class="col-lg-5 col-xs-12">
-                        <p class="resume-place">Polytech Nantes, Nantes, France</p>
-                        <p class="resume-date">2015 - Present</p>
+                        <p class="resume-location">Polytech Nantes, Nantes, France</p>
+                        <p class="resume-datespan">2015 - Present</p>
                 </div>
             </div>
 
             <div class="row justify-content-between no-gutters pl-2  mb-3">
-                <div class="col-lg-6 col-xs-12 no-l-padding">
-                        <p class="resume-name">BTEC Higher National Diploma in Computer Science</p>
+                <div class="col-lg-6 col-xs-12">
+                        <p class="resume-title">BTEC Higher National Diploma in Computer Science</p>
                 </div>
                 <div class="col-lg-5 col-xs-12">
-                        <p class="resume-place">University of Nantes, Nantes, France</p>
-                        <p class="resume-date">2015</p>
+                        <p class="resume-location">University of Nantes, Nantes, France</p>
+                        <p class="resume-datespan">2015</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-between no-gutters pl-2  mb-3">
+                <div class="col-lg-6 col-xs-12">
+                        <p class="resume-title">High School Diploma with a specialization in IT and Numerical Science</p>
+                </div>
+                <div class="col-lg-5 col-xs-12">
+                        <p class="resume-location">Chevrollier High School, Angers, France</p>
+                        <p class="resume-datespan">2013</p>
                 </div>
             </div>
 
@@ -39,27 +47,100 @@ id: resume
             <h3 class="mb-3">Work experience</h3>
             <hr>
             
-            <div class="row justify-content-between no-gutters pl-2 mb-3">
-                <div class="col-lg-6 col-xs-12 no-l-padding">
-                        <p class="resume-name">Web Developer</p>
+            {% for job in site.jobs reversed %}
+                <div class="row justify-content-between no-gutters pl-2 mb-3">
+                    <div class="col-lg-6 col-xs-12">
+                            <p class="resume-title">{{ job.title }}</p>
+                    </div>
+                    <div class="col-lg-5 col-xs-12">
+                            <p class="resume-location">{{ job.location }}</p>
+                            <p class="resume-datespan">{{ job.datespan }}</p>
+                    </div>
                 </div>
-                <div class="col-lg-5 col-xs-12">
-                        <p class="resume-place">ALD Automotive, Athens, Greece</p>
-                        <p class="resume-date">June 2017 – September 2017</p>
-                </div>
-            </div>
-
+            {% endfor %}
+            
             <!-- Skills -->
             <h3 class="mb-3">Skills</h3>
             <hr>
+
+            <div class="row justify-content-between no-gutters mb-3">
+                <div class="col-lg-4 col-md-6 col-xs-12 skill">
+                    <div class="php-chart .chart">
+                        <h4>PHP</h4>
+                    </div> 
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 skill">
+                    <div class="html-css-chart .chart">
+                        <h4>HTML/CSS</h4>
+                    </div> 
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 skill">
+                    <div class="js-chart .chart">
+                        <h4>Javascript</h4>
+                    </div> 
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 skill">
+                    <div class="java-chart .chart">
+                        <h4>Java</h4>
+                    </div> 
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 skill">
+                    <div class="c-chart .chart">
+                        <h4>C</h4>
+                    </div> 
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 skill">
+                    <div class="git-chart .chart">
+                        <h4>Git</h4>
+                    </div> 
+                </div>
+            </div>
             
             <!-- Languages -->
             <h3 class="mb-3">Languages</h3>
             <hr>
+
+            <div class="row justify-content-between no-gutters pl-2 mb-3">
+                <div class="col-12">
+                    <p class="resume-title">English</p>
+                    <p class="resume-location">Fluent, able to fully comprehend and talk about elaborate topics (<a target="_blank" href="https://en.wikipedia.org/wiki/TOEIC">TOEIC</a> score of 990/990).</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-between no-gutters pl-2 mb-3">
+                <div class="col-12">
+                    <p class="resume-title">French</p>
+                    <p class="resume-location">Native language.</p>
+                </div>
+            </div>
             
             <!-- Interests -->
             <h3 class="mb-3">Interests</h3>
             <hr>
+
+            <div class="row justify-content-between no-gutters pl-2 mb-3">
+                <div class="col-12">
+                    <p class="resume-title">Drummer in an amateur band for 3 years</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-between no-gutters pl-2 mb-3">
+                <div class="col-12">
+                    <p class="resume-title">Music enthusiast</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-between no-gutters pl-2 mb-3">
+                <div class="col-12">
+                    <p class="resume-title">Video games and IT tech in general</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-between no-gutters pl-2 mb-3">
+                <div class="col-12">
+                    <p class="resume-title">Marvel and (especially) DC Comics admirer</p>
+                </div>
+            </div>
 
         </div>
     </div>
