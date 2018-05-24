@@ -51,11 +51,16 @@ id: resume
                 <div class="row justify-content-between no-gutters pl-2 mb-3">
                     <div class="col-lg-6 col-xs-12">
                             <p class="resume-title">{{ job.title }}</p>
+                            <p class="resume-desc">{{ job.desc }}</p>
                     </div>
                     <div class="col-lg-5 col-xs-12">
                             <p class="resume-location">{{ job.location }}</p>
                             <p class="resume-datespan">{{ job.datespan }}</p>
+                            {% for tag in job.tags %}
+                                <span class="label-danger">{{ tag }}</span>
+                            {% endfor %}
                     </div>
+                    
                 </div>
             {% endfor %}
             
