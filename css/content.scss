@@ -41,7 +41,17 @@ hr{
     border: solid 1px darkgray;
 }
 
-.about-me{
+
+h3,h4{
+    font-weight: bold;
+    margin:0;
+}
+
+h4{
+    font-size:20px;
+}
+
+.about-me, .resume{
 
     border: 1px lightgray solid;
     border-bottom:none;
@@ -54,18 +64,6 @@ hr{
             width:100%;
             background-color:lightgray;
         }
-    }
-
-    h3,h4{
-        font-weight: bold;
-        margin:0;
-    }
-
-    h4{
-        font-size:20px;
-    }
-
-    p{
     }
 
     .info-label{
@@ -118,13 +116,55 @@ hr{
     }
 }
 
+.resume{
+    padding:40px;
+    background-color:white;
+    border: 1px lightgray solid;
+
+    .row{
+        border-left:4px solid darkgray;
+    }
+
+    .label-warning{
+        background-color:$primary-red;
+        color:white;
+        display:block;
+        width:280px;
+        border:2px solid #df3737;
+        border-radius:5px;
+        margin:auto;
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    p{
+        margin:0;
+    }
+
+    .resume-name{
+        font-weight: bold;
+    }
+
+    .resume-place{
+        font-size:14px;
+        color:#555555;
+    }
+
+    .resume-date{
+        color:darkgray;
+        font-size:13px;
+    }
+
+}
+
+
 @media screen and (max-width: 576px){
     
     .navbar{
         margin-bottom:8px;
     }
 
-    .about-container, .social-media{
+    .about-me, .social-media, .resume{
         // Removing the border on mobile
         padding:20px;
         border-width:0px;
