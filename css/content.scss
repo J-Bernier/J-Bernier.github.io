@@ -3,6 +3,7 @@
 ---
 
 $primary-red: #ef4747;
+$secondary-red: #df3737;
 
 body{
     background-image: url("../img/background_index_tmp_3.jpg");
@@ -16,13 +17,20 @@ body{
     font-size:10px;
     display:inline-block;
     font-weight: bold;
-    text-transform: uppercase;
     color:white;
-    border:2px solid #df3737;
+    border:2px solid $secondary-red;
     border-radius:5px;
     text-align:center;
     padding:3px;
     margin-top:5px;
+}
+
+a{
+    color:$primary-red;
+
+    &:hover{
+        color:$secondary-red;
+    }
 }
 
 .navbar{
@@ -61,7 +69,7 @@ h4{
     font-size:20px;
 }
 
-.about-me, .resume{
+.about-me, .resume, .projects{
 
     border: 1px lightgray solid;
     border-bottom:none;
@@ -126,9 +134,7 @@ h4{
     }
 }
 
-.resume{
-    padding:40px;
-    background-color:white;
+.resume, .projects{
     border: 1px lightgray solid;
 
     .row{
@@ -139,21 +145,21 @@ h4{
         margin:0;
     }
 
-    .resume-title{
+    .item-title{
         font-weight: bold;
     }
 
-    .resume-desc{
+    .item-desc{
         font-size:14px;
         font-style: italic;
     }
 
-    .resume-location{
+    .item-location{
         font-size:14px;
         color:#555555;
     }
 
-    .resume-datespan{
+    .item-datespan{
         color:darkgray;
         font-size:13px;
     }

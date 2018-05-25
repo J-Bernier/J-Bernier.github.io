@@ -9,3 +9,6 @@ instagram_username: Mjeremn1
 collections:
   jobs:
     output: true
+  
+  projects:
+    output: true

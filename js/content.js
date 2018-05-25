@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-    var skills = ['php','c','html-css','js','java','git'];
-    var skillPercentages = [160,60,160,150,80,160];
+    var skills = ['php','devops','html-css','js','java','git'];
+    var skillPercentages = [160,80,160,150,100,160];
 
     // For each listed skill, generate a donut chart
     skills.forEach(function(skill,index){
