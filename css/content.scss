@@ -1,12 +1,12 @@
 ---
-# Front matter to ensuire Jekyll properly reads the file
+# Front matter to ensure Jekyll properly reads the file
 ---
 
 $primary-red: #ef4747;
 $secondary-red: #df3737;
 
 body{
-    background-image: url("../img/background_index_tmp_3.jpg");
+    // background-image: url("../img/background_index_tmp_3.jpg");
     background-repeat: no-repeat;
     background-position:center top;
     font-family: 'Montserrat', sans-serif;
@@ -35,6 +35,10 @@ a{
 
 .navbar{
     margin-bottom:15px;
+    background-image: url("../img/background_index_tmp_3.jpg");
+    background-repeat: no-repeat;
+    background-position:center top;
+    font-family: 'Montserrat', sans-serif;
 
     .navbar-nav{
 
