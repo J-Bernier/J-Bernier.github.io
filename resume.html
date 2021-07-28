@@ -8,17 +8,39 @@ id: resume
     <div class="row justify-content-center">
         <div class="col-sm-12 col-md-10 col-xs-12 resume">
 
+            
+            <!-- Work experience -->
+            <h3 class="mb-3">Work experience</h3>
+            <hr>
+            
+            {% for job in site.jobs reversed %}
+                <div class="row justify-content-between no-gutters pl-2 mb-3">
+                    <div class="col-lg-6 col-xs-12">
+                            <p class="item-title">{{ job.title }}</p>
+                            <p class="item-desc">{{ job.desc }}</p>
+                    </div>
+                    <div class="col-lg-5 col-xs-12">
+                            <p class="item-location">{{ job.location }}</p>
+                            <p class="item-datespan">{{ job.datespan }}</p>
+                            {% for tag in job.tags %}
+                                <span class="label-danger">{{ tag }}</span>
+                            {% endfor %}
+                    </div>
+                    
+                </div>
+            {% endfor %}
+
             <!-- Education -->
             <h3 class="mb-3">Education</h3>
             <hr>
             
             <div class="row justify-content-between no-gutters pl-2 mb-3">
                 <div class="col-lg-6 col-xs-12">
-                        <p class="item-title">Preparation of a Master’s Degree in Engineering in Computer Science</p>
+                        <p class="item-title">Master’s Degree in Engineering in Computer Science</p>
                 </div>
                 <div class="col-lg-5 col-xs-12">
                         <p class="item-location">Polytech Nantes, Nantes, France</p>
-                        <p class="item-datespan">2015 - Present</p>
+                        <p class="item-datespan">2018</p>
                 </div>
             </div>
 
@@ -41,28 +63,6 @@ id: resume
                         <p class="item-datespan">2013</p>
                 </div>
             </div>
-
-            
-            <!-- Work experience -->
-            <h3 class="mb-3">Work experience</h3>
-            <hr>
-            
-            {% for job in site.jobs reversed %}
-                <div class="row justify-content-between no-gutters pl-2 mb-3">
-                    <div class="col-lg-6 col-xs-12">
-                            <p class="item-title">{{ job.title }}</p>
-                            <p class="item-desc">{{ job.desc }}</p>
-                    </div>
-                    <div class="col-lg-5 col-xs-12">
-                            <p class="item-location">{{ job.location }}</p>
-                            <p class="item-datespan">{{ job.datespan }}</p>
-                            {% for tag in job.tags %}
-                                <span class="label-danger">{{ tag }}</span>
-                            {% endfor %}
-                    </div>
-                    
-                </div>
-            {% endfor %}
             
             <!-- Skills -->
             <h3 class="mb-3">Skills</h3>
@@ -138,12 +138,6 @@ id: resume
             <div class="row justify-content-between no-gutters pl-2 mb-3">
                 <div class="col-12">
                     <p class="item-title">Video games and IT tech in general</p>
-                </div>
-            </div>
-
-            <div class="row justify-content-between no-gutters pl-2 mb-3">
-                <div class="col-12">
-                    <p class="item-title">Marvel and (especially) DC Comics admirer</p>
                 </div>
             </div>
 
